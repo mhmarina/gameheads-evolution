@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSlope",
-  "eventList": [],
+  "name": "oDetonator",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "oFloor",
-    "path": "objects/oFloor/oFloor.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "slope",
-    "path": "sprites/slope/slope.yy",
+    "name": "Detonator",
+    "path": "sprites/Detonator/Detonator.yy",
   },
   "spriteMaskId": null,
   "visible": true,

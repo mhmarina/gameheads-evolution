@@ -1,3 +1,4 @@
+
 //fullscreen toggle:
 //if keyboard_check_pressed(vk_f8){
 //	window_set_fullscreen(!window_get_fullscreen());
@@ -23,12 +24,15 @@ camera_set_view_pos(view_camera[0], finalCamX, finalCamY);
 
 if(doorsBroken == 1){
 	camera_set_view_size(view_camera[0],480,270);
+	oPlayer.canJump = true;
 }
 if(doorsBroken == 2){
 	camera_set_view_size(view_camera[0],960,540);
+	oPlayer.canCrouch = true;
 }
 if(doorsBroken >= 3){
 	camera_set_view_size(view_camera[0],1920,1080);
+	oPlayer.jumpMax = 2;
 }
 
 

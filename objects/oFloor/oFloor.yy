@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSlope",
-  "eventList": [],
+  "name": "oFloor",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "oFloor",
-    "path": "objects/oFloor/oFloor.yy",
+    "name": "oWall",
+    "path": "objects/oWall/oWall.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "slope",
-    "path": "sprites/slope/slope.yy",
+    "name": "sWall",
+    "path": "sprites/sWall/sWall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

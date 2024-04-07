@@ -33,13 +33,15 @@ xSpeed = 0;
 ySpeed = 0;
 
 //state variables
+canCrouch = false;
+canJump = false;
 crouching = false;
 
 //Jumping
 grav = 2;
 termVel = 8; //cap on falling speed
 jumpSpeed = -10;
-jumpMax = 2;
+jumpMax = 1;
 jumpCount = 0;
 jumpHoldTimer = 0;
 jumpHoldFrames = 10;
@@ -53,6 +55,8 @@ depth = -2000
 	coyoteJumpFrames = 5;
 	coyoteJumpTimer = 0;
 
+coolPoints = 0;
+pressed = false;
 
 
 

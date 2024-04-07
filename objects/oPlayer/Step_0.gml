@@ -2,7 +2,7 @@
 getControls();
 
 //crouching
-if(downKey && onGround && !attackKey){
+if(downKey && onGround && !attackKey && canCrouch){
 	crouching = true;
 }
 else{
@@ -65,7 +65,7 @@ else{
 
 //jump
 // to fly, remove the jumpmax
-if(jumpKeyBuffered && jumpCount < jumpMax){
+if(jumpKeyBuffered && jumpCount < jumpMax && canJump){
 	//reset buffer
 	jumpKeyBuffered = false;
 	jumpKeyBufferTimer = 0;
@@ -111,28 +111,30 @@ if (ySpeed >= 0 && place_meeting(x,y+1,oWall)){
 }
 y += ySpeed;
 
-//sprite control
-
-		if (abs(xSpeed) > 0){
-			sprite_index = walkSpr;
-		}
-		if(abs(xSpeed) >= moveSpeed[1]){
-			sprite_index = runSpr;
-		}
-		if(xSpeed == 0){
-			sprite_index = idleSpr;
-		}
-		if(!onGround){
-			sprite_index = jumpSpr;
-		}
-	mask_index = idleSpr;
-	if(crouching){
+		//sprite control
+		if(crouching){
 		sprite_index = crouchSpr;
 		mask_index = crouchSpr;
 		}
+		else{
+			if (abs(xSpeed) > 0){
+				sprite_index = walkSpr;
+			}
+			if(abs(xSpeed) >= moveSpeed[1]){
+				sprite_index = runSpr;
+			}
+			if(xSpeed == 0){
+				sprite_index = idleSpr;
+			}
+			if(!onGround){
+				sprite_index = jumpSpr;
+			}
+			mask_index = idleSpr;
+		}
 
-
-
+if(!instance_exists(oDetonator) && coolPoints >= 16){
+	instance_create_layer(1350,1055,"Instances",oDetonator);
+}
 
 
 

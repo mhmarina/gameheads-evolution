@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSlope",
-  "eventList": [],
+  "name": "o_NPCgroup",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "oFloor",
-    "path": "objects/oFloor/oFloor.yy",
+    "name": "o_NPC",
+    "path": "objects/o_NPC/o_NPC.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "slope",
-    "path": "sprites/slope/slope.yy",
+    "name": "NPC_group",
+    "path": "sprites/NPC_group/NPC_group.yy",
   },
   "spriteMaskId": null,
   "visible": true,

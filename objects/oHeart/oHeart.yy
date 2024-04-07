@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSlope",
+  "name": "oHeart",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -9,10 +9,7 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "oFloor",
-    "path": "objects/oFloor/oFloor.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "slope",
-    "path": "sprites/slope/slope.yy",
+    "name": "sHeart",
+    "path": "sprites/sHeart/sHeart.yy",
   },
   "spriteMaskId": null,
   "visible": true,
