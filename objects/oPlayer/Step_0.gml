@@ -132,7 +132,7 @@ y += ySpeed;
 			mask_index = idleSpr;
 		}
 
-if(!instance_exists(oDetonator) && coolPoints >= 16){
+if(!instance_exists(oDetonator) && coolPoints >= 20){
 	instance_create_layer(1350,1055,"Instances",oDetonator);
 }
 
