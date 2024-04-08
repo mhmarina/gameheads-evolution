@@ -1,15 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
-finalCamX = 0;
-finalCamY = 0;
+if(!(place_meeting(x,y,oWall) || place_meeting(x,y,oFloor))){
+	speed = 5;
+}
 
-camTrailSpd = 0.25;
-doorsBroken = 0;
-flag = false;
 
-//alarm[1] = 120;
-//set cam coord
-camera_set_view_size(view_camera[0],240,135);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

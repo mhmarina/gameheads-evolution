@@ -22,17 +22,21 @@ finalCamX += (_camX - finalCamX) * camTrailSpd;
 finalCamY += (_camY - finalCamY) * camTrailSpd;
 camera_set_view_pos(view_camera[0], finalCamX, finalCamY);
 
-if(doorsBroken == 1){
+if(doorsBroken == 1 && !flag){
 	camera_set_view_size(view_camera[0],480,270);
 	oPlayer.canJump = true;
 }
-if(doorsBroken == 2){
+if(doorsBroken == 2 && !flag){
 	camera_set_view_size(view_camera[0],960,540);
 	oPlayer.canCrouch = true;
 }
-if(doorsBroken >= 3){
+if(doorsBroken >= 3 && !flag){
 	camera_set_view_size(view_camera[0],1920,1080);
 	oPlayer.jumpMax = 2;
+}
+if(oBlackScreen.image_alpha == 0 && !flag){
+	flag = true;
+	alarm[0] = 120;
 }
 
 

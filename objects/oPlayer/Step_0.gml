@@ -133,7 +133,7 @@ y += ySpeed;
 		}
 
 if(!instance_exists(oDetonator) && coolPoints >= 20){
-	instance_create_layer(1350,1055,"Instances",oDetonator);
+	instance_create_layer(1350,0,"Instances",oDetonator);
 }
 
 

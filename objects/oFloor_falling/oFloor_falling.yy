@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sWall",
-    "path": "sprites/sWall/sWall.yy",
+    "name": "sBrick",
+    "path": "sprites/sBrick/sBrick.yy",
   },
   "spriteMaskId": null,
   "visible": true,

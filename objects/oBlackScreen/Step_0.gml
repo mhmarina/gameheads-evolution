@@ -1,15 +1,27 @@
 /// @description Insert description here
 // You can write your code in this editor
-finalCamX = 0;
-finalCamY = 0;
+if(flag && image_alpha > 0 && !instance_exists(oFloor) && !instance_exists(oFloor_falling)){
+	flag = false;
+	alarm[0] = 30;
+}
 
-camTrailSpd = 0.25;
-doorsBroken = 0;
-flag = false;
 
-//alarm[1] = 120;
-//set cam coord
-camera_set_view_size(view_camera[0],240,135);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
