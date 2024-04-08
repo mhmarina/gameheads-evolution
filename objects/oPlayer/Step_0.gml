@@ -132,7 +132,8 @@ y += ySpeed;
 			mask_index = idleSpr;
 		}
 
-if(!instance_exists(oDetonator) && coolPoints >= 20){
+if(!instance_exists(oDetonator) && coolPoints == 20){
+	oCamera.instruction = "Blow up the boxes!";
 	instance_create_layer(1350,0,"Instances",oDetonator);
 }
 

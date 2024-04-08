@@ -1,12 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+draw_set_color(c_black);
+draw_set_alpha(0.5);
+draw_rectangle(0,0,1920,100,false);
+draw_set_alpha(1);
 draw_set_font(Minecraftia);
-draw_set_color(c_white);
+draw_set_color(c_lime);
 draw_text(10,10,"Cool Points:");
-draw_text(10,35,oPlayer.coolPoints);
-
-
+draw_text(135,10,oPlayer.coolPoints);
+draw_set_color(c_white);
+draw_text(10,35,instruction);
 
 
 

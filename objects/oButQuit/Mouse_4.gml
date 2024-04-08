@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-//camera_set_view_size(view_camera[0],960,540);
+game_end();
 
-instance_create_layer(room_width/2, 350, "Instances", oButReplay);
-instance_create_layer(room_width/2, 600, "Instances", oButQuit);
 
 
 

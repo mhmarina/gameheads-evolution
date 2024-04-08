@@ -6,7 +6,7 @@ finalCamY = 0;
 camTrailSpd = 0.25;
 doorsBroken = 0;
 flag = false;
-
+instruction = "Inspire people by Breaking boundaries!";
 //alarm[1] = 120;
 //set cam coord
 camera_set_view_size(view_camera[0],240,135);

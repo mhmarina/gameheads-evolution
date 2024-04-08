@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(flag && image_alpha > 0 && !instance_exists(oFloor) && !instance_exists(oFloor_falling)){
+	oCamera.instruction = "Refuse to be boxed in.\nConstant evolution causes expansion."
 	flag = false;
 	alarm[0] = 30;
 }
