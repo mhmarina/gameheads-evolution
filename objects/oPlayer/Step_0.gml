@@ -66,6 +66,7 @@ else{
 //jump
 // to fly, remove the jumpmax
 if(jumpKeyBuffered && jumpCount < jumpMax && canJump){
+	audio_play_sound(JumpSFX,1,false);
 	//reset buffer
 	jumpKeyBuffered = false;
 	jumpKeyBufferTimer = 0;

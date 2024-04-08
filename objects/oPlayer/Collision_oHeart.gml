@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 coolPoints += 1;
+audio_play_sound(SparkleSFX,1,false);
 instance_destroy(other);
 
 

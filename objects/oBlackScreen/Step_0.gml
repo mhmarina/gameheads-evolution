@@ -6,6 +6,11 @@ if(flag && image_alpha > 0 && !instance_exists(oFloor) && !instance_exists(oFloo
 	alarm[0] = 30;
 }
 
+if(!allGone && image_alpha == 0){
+	allGone = true;
+	instance_create_layer(0,0,"Hearts",oHeartsSpawner);
+}
+
 
 
 

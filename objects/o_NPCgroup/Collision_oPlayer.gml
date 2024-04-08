@@ -2,6 +2,7 @@
 // You can write your code in this editor
 sprite_index = NPC_group_happy;
 if(!isHappy){
+	audio_play_sound(SparkleSFX,1,false);
 	oPlayer.coolPoints++;
 }
 isHappy = true;

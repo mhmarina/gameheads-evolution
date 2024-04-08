@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(!isHappy){
+	audio_play_sound(SparkleSFX,1,false);
 	oPlayer.coolPoints++;
 }
 isHappy = true;

@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(!pressed){
+	audio_play_sound(ExplosionSFX,1,false);
+}
 pressed = true;
 
 
